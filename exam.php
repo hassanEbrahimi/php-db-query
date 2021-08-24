@@ -20,7 +20,9 @@ $reurn_id=Query("UPDATE users
 
 
 # SELECT ALL USERS ----------------------------
-$users=Query("SELECT * FROM users ");
+$users=Query("SELECT * FROM users ",$count);
+
+echo " $count users exist. <br>";
 
 // in loop echo all user's usernames
 foreach($users as $userVal){
